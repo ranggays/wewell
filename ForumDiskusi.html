@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forum Diskusi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    .search-form {
+      position: relative;
+    }
+
+    .search-box {
+      color: #ffffff;
+      background-color: transparent;
+      width: 300px;
+    }
+
+    .search-box2 {
+      padding-right: 30px; 
+      color: gray;
+      background-color: transparent;
+      width: 300px;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #ffffff; 
+    }
+    
+    .search-box::placeholder {
+      color: white;
+    }
+    
+    .caritopik {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .caritopik input.form-control {
+      padding-right: 30px;
+      border-color: #0d6efd;
+      width: 260px;
+    }
+
+    .caritopik .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 40%; 
+      transform: translateY(-50%);
+      color: #0d6efd; 
+    }
+
+    .letter-a {
+      position: absolute;
+      top: -15px;
+      right: 15px;
+      font-size: 30px;
+      border-radius: 50%;
+      background-color: #28a745;
+      padding: 5px 10px;
+      color: #fff;
+    }
+
+    hr {
+        background-color: gray;
+    }
+
+    .rounded-circle-custom {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    }
+
+    .round-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px; 
+      height: 100px; 
+      border-radius: 50%;
+      border: 1px solid #0d6efd;
+      text-decoration: none;
+      color: #0d6efd;
+      padding: 15px 30px;
+    }
+
+    .dashed-hr {
+      border: none;
+      border-top: 1px dashed white;
+      width: 100%;
+    }
+
+    p{
+      margin: 0;
+    }
+
+    .gambar {
+      display:flex;
+      align-items: center; /* Mengatur vertikal centering */
+    }
+    .gambar img {
+      margin-right: 10px; /* Jarak antara foto dan teks */
+    }
+    .gambar .text-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .medsos {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" style="padding-top: 23px; padding-bottom: 23px; height: auto; background: linear-gradient(to right, #007bff, #00bfff); z-index: 1;">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between">
+      <a class="navbar-brand me-5" href="Newhome.html" target="_blank"><b>WeWell.id</b></a>
+      <form class="d-flex search-form" role="search">
+        <input class="form-control search-box" type="search" placeholder ="Cari di WeWell.id" aria-label="Search">
+        <i class="fas fa-search search-icon"></i>
+      </form>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ms-auto">
+      <li class="nav-item me-3">
+        <a class="nav-link active" href="Penilaian1.html" target="_blank">Layanan</a>
+      </li>
+      <li class="nav-item me-3">
+        <a class="nav-link active" href="Artikel.html" target="_blank">Artikel</a>
+      </li>
+      <li class="nav-item me-3">
+        <a class="nav-link active" href="ForumDiskusi.html" target="_blank">Komunitas</a>
+      </li>
+      <li class="nav-item me-5">
+        <a class="nav-link active" href="aboutus.html" target="_blank">Tentang Kami</a>
+      </li>
+      <li class="nav-item me-2 mb-2">
+        <a class="btn btn-light my-2 my-sm-0 " type="button" href="Log.html" style="border-radius: 10px; color: #00bfff;">Masuk</a>
+      </li>
+      <li class="nav-item">
+        <a class="btn btn-outline-light text-light" type="button" href="Sign.html" style="border-radius: 10px; color: #00bfff;">Daftar</a>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid py-4" style="background-color: #ffffff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <h1 class="text-center">Forum Diskusi</h1>
+            </div>
+        </div>
+        
+        <div class="d-flex justify-content-center">
+            <a class="btn btn-primary me-2 my-2 my-sm-0 text-light" href="MulaiDiskusi.html" style="width: 260px; height: 50px; border-radius: 10px;" type="button">
+              <p style="margin-top: 5px;">MULAI DISKUSI</p></a>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <hr style="margin-left: 42%; margin-right: 42%;">
+            </div>
+        </div>
+
+        <div class="caritopik">
+          <form class="d-flex search-form" role="search">
+            <input class="form-control search-box2" type="search" placeholder ="Cari Topik disini" aria-label="Search" style="color: gray;">
+          </form>
+        </div>
+        
+        <div>
+            <p></p><br>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 dropdown">
+            <p class="text-left d-inline-block">Kategori&nbsp;&nbsp;&nbsp;</p>
+            <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Semua</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kesehatan</a></li>
+                <li><a class="dropdown-item" href="#">Mental</a></li>
+                <li><a class="dropdown-item" href="#">Hidup Sehat</a></li>
+                <li><a class="dropdown-item" href="#">Keluarga</a></li>
+                <li><a class="dropdown-item" href="#">Tips and Trick</a></li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <button class="btn btn-primary mr-2 my-2 my-sm-0 text-light" type="button" style="border-radius: 50px;">
+              <img src="./images/icons8-bounce-up-24.png" style="width: 15px;">&nbsp;&nbsp;Trending Topik</button>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="button" style="border-radius: 50px;">Terbaru</button>
+          </div>
+        </div>
+
+      <div>
+          <p></p><br>
+      </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Pentingnya Kesadaran Diri Dalam Mengelola Emosi</p>
+          </div>
+
+          <div class="col-4">
+            <div class="gambar">
+              <img src="wahyu_Co.png" alt="orang" style="width: 60px; height: 60px;"> 
+              <div class="text-container">
+                <p>Wahyu Dian P</p>
+                <p>12 November 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <p>2311</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>124</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Mengenal Tanda-tanda Masalah Gangguan Kesehatan Mental.</p>
+          </div>
+
+          <div class="col-4">
+            <div class="gambar">
+              <img src="kaeriupdt.png" alt="orang" style="width: 60px; height: 60px;">
+              <div class="text-container">
+                <p>Sukaeri</p>
+                <p>15 November 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <p>2324</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>145</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Ketahui 5 Langkah Sederhana Menyembuhkan Masalah Ganguan Emosional</p>
+          </div>
+
+          <div class="col-4">
+            <div class="gambar">
+              <img src="wahyu_Co.png" alt="orang" style="width: 60px; height: 60px;">
+              <div class="text-container">
+                <p>Wahyu Dian P</p>
+                <p>16 November 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <p>1214</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>103</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Memahami Sosial Emosional dan Cara Mengendalikannya</p>
+          </div>
+
+          <div class="col-4">
+            <div class="gambar">
+              <img src="sicuyupdt.png" alt="orang" style="width: 60px; height: 60px;">
+              <div class="text-container">
+                <p>Andi Fuad</p>
+                <p>17 November 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <p>464</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>20</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Peran Komunitas Dalam Mendorong Kesejahteraan Sosial Emosional</p>
+          </div>
+
+          <div class="col-4">
+           <div class="gambar">
+            <img src="lutfiupdt.png" alt="orang" style="width: 60px; height: 60px;">
+            <div class="text-container">
+              <p>Lutfi Zahran Elnino</p>
+              <p>18 November 2023</p>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-2">
+            <p>2311</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>120</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>5 Tips Mengontrol Gejala Awal Masalah Kesehatan Sosial Emosional</p>
+          </div>
+
+          <div class="col-4">
+           <div class="gambar">
+            <img src="nabilupdt.png" alt="orang" style="width: 60px; height: 60px;">
+            <div class="text-container">
+              <p>Agung Pratama</p>
+              <p>19 November 2023</p>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-2">
+            <p>767</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>54</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Kenali Gejala dan Ciri-Ciri Masalah Sosial Emosional yang Perlu Diwaspadai</p>
+          </div>
+
+          <div class="col-4">
+           <div class="gambar">
+            <img src="nissa_Co.png" alt="orang" style="width: 60px; height: 60px;"> 
+            <div class="text-container">
+              <p>Choirul Nissa</p>
+              <p>21 November 2023</p>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-2">
+            <p>1254</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>67</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row mt-3 mb-3">
+          <div class="col-4">
+            <p>Tantangan Sosial Emosional pada Masa Transisi ke Dewasa.</p>
+          </div>
+
+          <div class="col-4">
+            <div class="gambar">
+              <img src="nissa_Co.png" alt="orang" style="width: 60px; height: 60px;"> 
+              <div class="text-container">
+                <p>Choirul Nissa</p>
+                <p>22 November 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-2">
+            <p>342</p>
+            <p>dilihat</p>
+          </div>
+
+          <div class="col-2">
+            <p>12</p>
+            <p>Komentar</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <hr class="dashed-hr">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5 text-center"></div>
+            <div class="col-2">
+              <div class="mb-3 mt-3 round-button" >
+                <a class="nav-link active text-primary" href="#">Lainnya</a>
+            </div>
+            </div>
+            <div class="col-5"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid py-4" style="height: 325px; background: linear-gradient(90deg, rgba(0,95,246,1) 0%, rgba(44,125,255,1) 85%, rgba(59,135,255,1) 100%);">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <h5 class="text-light"><b>WeWell.id</b></h5>
+        <a class="nav-link active text-light" href="Newhome.html" target="_blank">Beranda</a>
+        <a class="nav-link active text-light" href="Penilaian1.html" target="_blank">Layanan</a>
+        <a class="nav-link active text-light" href="Artikel.html" target="_blank">Artikel</a>
+        <a class="nav-link active text-light" href="ForumDiskusi.html" target="_blank">Komunitas</a>
+        <a class="nav-link active text-light" href="aboutus.html" target="_blank">Tentang Kami</a>
+      </div>
+
+      <div class="col-4">
+        <h5 class="text-light"><b>Lainnya</b></h5>
+        <a class="nav-link active text-light" href="#">Syarat & Ketentuan</a>
+        <a class="nav-link active text-light" href="#">Privasi</a>
+        <a class="nav-link active text-light" href="#">Iklan</a>
+        <a class="nav-link active text-light" href="#">Komunitas</a>
+        <a class="nav-link active text-light" href="#">Gabung di Tim Artikel</a>
+      </div>
+
+      <div class="col-4">
+                <h5 class="text-light"><b>Media Sosial</b></h5>
+                <div class="d-flex align-items-center mt-1">
+                  <a href="https://www.facebook.com/"><i class="fab fa-facebook-f medsos"></i></a>
+                  <a href="https://twitter.com/?lang=en-id"><i class="fab fa-twitter medsos"></i></a>
+                  <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram medsos"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in medsos"></i></a>
+                </div>
+            </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    .search-form {
+      position: relative;
+    }
+
+    .search-box {
+      padding-right: 30px; 
+      color: #ffffff;
+      background-color: transparent;
+      width: 300px;
+    }
+
+    .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #ffffff; 
+    }
+
+    .search-box::placeholder {
+      color: white;
+    } 
+
+    .letter-a {
+      position: absolute;
+      top: -15px;
+      right: 15px;
+      font-size: 30px;
+      border-radius: 50%;
+      background-color: #28a745; /* Warna hijau */
+      padding: 5px 10px;
+      color: #fff; /* Teks putih */
+    }
+
+    hr {
+        background-color: gray;
+    }
+
+    .rounded-circle-custom {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .text-circle {
+        position: absolute;
+        width: 40px;
+        margin-top: -15px;
+        margin-left: -20px;
+    }
+
+    .card-overlay {
+        position: absolute;
+        background: rgba(49, 49, 49, 0.7);
+        color: white;
+        padding: 5px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        height: 45%;
+        top: 55%;
+        border-radius: 10px;
+    }
+
+    .articleb {
+        border-radius: 10px;
+    }
+
+    .medsos {
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255,255,255,0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark" style="padding-top: 23px; padding-bottom: 23px; height: auto; background: linear-gradient(to right, #007bff, #00bfff);">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between">
+                <a class="navbar-brand me-5" href="Newhome.html" target="_blank"><b>WeWell.id</b></a>
+                <form class="d-flex search-form" role="search">
+                    <input class="form-control search-box" type="search" placeholder ="Cari di WeWell.id" aria-label="Search">
+                    <i class="fas fa-search search-icon"></i>
+                </form>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-3">
+                    <a class="nav-link active" href="Penilaian1.html" target="_blank">Layanan</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link active" href="Artikel.html" target="_blank">Artikel</a>
+                </li>
+                <li class="nav-item me-3">
+                    <a class="nav-link active" href="ForumDiskusi.html" target="_blank">Komunitas</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link active" href="aboutus.html" target="_blank">Tentang Kami</a>
+                </li>
+                <li class="nav-item me-2 mb-2">
+                    <a class="btn btn-light my-2 my-sm-0 " type="button" href="Log.html" style="border-radius: 10px; color: #00bfff;">Masuk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-light text-light" type="button" href="Sign.html" style="border-radius: 10px; color: #00bfff;">Daftar</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="height: auto; padding-top: 80px; background: linear-gradient(to right, #007bff, #00bfff);">
+        <div class="container">
+            <div class="row text-center" style="color: white;">
+                <div class="col-12">
+                    <h1><b>Hallo!</b></h1><br class="mb-4">
+                    <p>"Apa pun yang membuat anda tersenyum, pertahankan. Apapun <br>yang membuat anda sedih, tinggalkan." <br>- Mario Teguh</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row justify-content-center" style="padding-bottom: 150px;">
+            <div class="card me-2 mt-5" style="width: 20rem; border-radius: 10px; ">
+                <img class="eclipse-icon" alt="" src="./images/icon_chat.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                    <a class="card-title text-dark nav-link active" href="ForumDiskusi.html" style="font-size: 18px;"><b>Diskusi</b></a>
+                    <p>Tempat bercerita dan berpendapat.</p>
+                </div>
+            </div>
+            <div class="card me-2 mt-5" style="width: 20rem; border-radius: 10px; ">
+                <img class="eclipse-icon" alt="" src="./images/icon_buat_janji.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                    <a class="card-title text-dark nav-link active" href="Penilaian1.html" style="font-size: 18px;"><b>Penilaian Kesehatan</b></a>
+                    <p>Cek! seberapa sehat mentalmu</p>
+                </div>
+            </div>
+            <div class="card me-2 mt-5" style="width: 20rem; border-radius: 10px; ">
+                <img class="eclipse-icon" alt="" src="aboutus.svg" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                    <a class="card-title text-dark nav-link active" href="aboutus.html" style="font-size: 18px;"><b>Tentang Kami</b></a>
+                    <p>Profil Developer</p>
+                </div>
+            </div>
+            <div class="card mt-5" style="width: 20rem; border-radius: 10px; ">
+                <img class="eclipse-icon" alt="" src="./images/icon_article2.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                    <a class="card-title text-dark nav-link active" href="Artikel.html" style="font-size: 18px;"><b>Artikel</b></a>
+                    <p>Temukan tips dan info terkini dalam artikel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-4" style="background: white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mt-4">
+                    <h1 class="text-center"><img src="./images/Ellipse 6.png" class="text-circle">Artikel</h1>
+                </div>
+            </div>
+      
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary me-2 my-2 my-sm-0 text-light" type="button" style="border-radius: 50px;">
+                        <img src="./images/icons8-bounce-up-24.png" style="width: 15px;">&nbsp;&nbsp;Trending Topik</button>
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="button" style="border-radius: 50px;">Terbaru</button>
+                </div>
+            </div>
+      
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a href="IsiArtikel.html"><div class="card text-bg-secondary justify-content-center mt-5 articleb">
+                        <img src="https://i.pinimg.com/474x/5d/d0/dc/5dd0dcd09b710b443565e1340e60d9ee.jpg" class="card-img articleb" alt="...">
+                        <div class="card-img-overlay card-overlay d-flex flex-column justify-content-end">
+                            <button type="button" class="btn btn-primary btn-sm mb-2" style="width: 100px; border-radius: 20px;">Hidup Sehat</button>
+                            <p class="card-text mb-2" style="font-size: 13px;  font-weight: bolder; color: white;">Pendidikan Emosional Mencuat sebagai Prioritas dalam Kurikulum Sekolah</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="IsiArtikel2.html"><div class="card text-bg-dark justify-content-center mt-5 articleb">
+                        <img src="https://i.pinimg.com/564x/19/73/c5/1973c5bfb780cf8a1853bf59ccb37f33.jpg" class="card-img articleb" alt="...">
+                        <div class="card-img-overlay card-overlay d-flex flex-column justify-content-end">
+                            <button type="button" class="btn btn-primary btn-sm mb-2 art" style="width: 100px; border-radius: 20px;">Hidup Sehat</button>
+                            <p class="card-text mb-2" style="font-size: 13px; font-weight: bolder; color: white;">Program Senam Pagi di Taman Kota Menyebarkan Kesehatan Sosial Emosional</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="IsiArtikel3.html"><div class="card text-bg-dark justify-content-center mt-5 articleb">
+                        <img src="https://i.pinimg.com/564x/4f/67/98/4f67980a630daabba5553f6b1cfa5dec.jpg" class="card-img articleb" alt="...">
+                        <div class="card-img-overlay card-overlay d-flex flex-column justify-content-end">
+                            <button type="button" class="btn btn-primary btn-sm mb-2" style="width: 100px; border-radius: 20px;">Hidup Sehat</button>
+                            <p class="card-text mb-2" style="font-size: 13px;  font-weight: bolder; color: white;">Ruang Terbuka Publik: Mendorong Kesehatan Sosial Emosional Melalui Seni dan Kreativitas</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="IsiArtikel4.html"><div class="card text-bg-secondary justify-content-center mt-5 articleb">
+                        <img src="https://i.pinimg.com/564x/a9/bc/84/a9bc84a4a981894c5d55072a02951a2b.jpg" class="card-img articleb" alt="...">
+                        <div class="card-img-overlay card-overlay d-flex flex-column justify-content-end">
+                            <button type="button" class="btn btn-primary btn-sm mb-2" style="width: 100px; border-radius: 20px;">Hidup Sehat</button>
+                            <p class="card-text mb-2" style="font-size: 13px;  font-weight: bolder; color: white;">Kafe Ramah Kesehatan Mental: Merangkul Kesehatan Sosial Emosional di Lingkungan Sehari-hari</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="IsiArtikel5.html"><div class="card text-bg-secondary justify-content-center mt-5 articleb">
+                        <img src="https://i.pinimg.com/564x/fd/71/26/fd7126343d39a0441f9e0c3d5086015f.jpg" class="card-img articleb" alt="...">
+                        <div class="card-img-overlay card-overlay d-flex flex-column justify-content-end">
+                            <button type="button" class="btn btn-primary btn-sm mb-2" style="width: 100px; border-radius: 20px;">Hidup Sehat</button>
+                            <p class="card-text mb-2" style="font-size: 13px;  font-weight: bolder; color: white;">Gerakan 'Jalan Sehat' Mendorong Kesehatan Sosial Emosional di Masyarakat</p>
+                        </div>
+                    </div></a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <a href="IsiArtikel6.html"><div class="card text-bg-secondary justify-content-center mt-5 articleb">
+                        <img src="https://i.pinimg.com/564x/51/b3/ba/51b3ba7f91319b703f3a8d3ab635beb2.jpg" class="card-img articleb" alt="...">
+                        <div class="card-img-overlay card-overlay d-flex flex-column justify-content-end">
+                            <button type="button" class="btn btn-primary btn-sm mb-2" style="width: 100px; border-radius: 20px;">Hidup Sehat</button>
+                            <p class="card-text mb-2" style="font-size: 13px;  font-weight: bolder; color: white;">Terapi Hutan: Menyembuhkan Kesehatan Sosial Emosional Melalui Kontak dengan Alam</p>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 100px;">
+                <div class="col-12 text-center">
+                    <h1><img src="./images/Ellipse 7.png" alt="" class="text-circle">Ulasan</h1>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div id="carouselExampleCaptions" class="carousel slide justify-content-center">
+                        <div class="carousel-inner justify-content-center">
+                            <div class="carousel-item active card" style="border-radius: 10px; background: linear-gradient(to right, #007bff, #00bfff);">
+                                <img class="eclipse-icon" alt="" src="nissa_Co.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                                    <h5 class="card-title text-light">Choirul Nissa</h5>
+                                    <p class="text-light" style="padding-left: 25%; padding-right: 25%;">WellWell.id memberikan akses mudah untuk konsultasi dokter secara online dan pengiriman obat dengan harga yang terjangkau. Penggunaannya yang intuitif membuat pengalaman berobat menjadi lebih nyaman.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item card" style="border-radius: 10px; background: linear-gradient(to right, #007bff, #00bfff);">
+                                <img class="eclipse-icon" alt="" src="lutfiupdt.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                                    <h5 class="card-title text-light">Luthfi Zahran</h5>
+                                    <p class="text-light" style="padding-left: 25%; padding-right: 25%;">WellWell.id tidak hanya tentang mengobati penyakit, tetapi juga memberikan nilai tambah melalui konten edukatif tentang gaya hidup sehat dan pencegahan penyakit. Ini membantu pengguna untuk memahami peran proaktif dalam menjaga kesehatan mereka.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item card" style="border-radius: 10px; background: linear-gradient(to right, #007bff, #00bfff);">
+                                <img class="eclipse-icon" alt="" src="sicuyupdt.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                                    <h5 class="card-title text-light">Andi Fuad</h5>
+                                    <p class="text-light" style="padding-left: 25%; padding-right: 25%;">Layanan telemedicine WellWell.id sangat membantu, terutama bagi mereka yang sulit mengakses layanan medis langsung. Fitur-fitur seperti konsultasi video dengan dokter dan layanan pengiriman obat sangat membantu dalam mengelola kesehatan.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item card" style="border-radius: 10px; background: linear-gradient(to right, #007bff, #00bfff);">
+                                <img class="eclipse-icon" alt="" src="wahyu_Co.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                                    <h5 class="card-title text-light">Wahyu Dian P</h5>
+                                    <p class="text-light" style="padding-left: 25%; padding-right: 25%;">Website WeWell ini memberikan panduan singkat dan praktis dengan artikel terkini serta kuis kesehatan mental untuk membantu pengunjung merawat dan menjaga kesejahteraan pikiran mereka.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item card" style="border-radius: 10px; background: linear-gradient(to right, #007bff, #00bfff);">
+                                <img class="eclipse-icon" alt="" src="nabilupdt.png" style="width: 100px; position: absolute; top: -15px; left: 50%; transform: translate(-50%, 40%);" />
+                                <div class="card-body" style="margin-top: 120px; text-align: center;">
+                                    <h5 class="card-title text-light">Agung Pratama</h5>
+                                    <p class="text-light" style="padding-left: 25%; padding-right: 25%;">Website WeWell ini memberikan panduan singkat dan praktis dengan artikel terkini serta kuis kesehatan mental untuk membantu pengunjung merawat dan menjaga kesejahteraan pikiran mereka.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden"></span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+      <div class="container-fluid py-4" style="height: 325px; background: linear-gradient(90deg, rgba(0,95,246,1) 0%, rgba(44,125,255,1) 85%, rgba(59,135,255,1) 100%);">
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-4">
+                      <h5 class="text-light"><b>WeWell.id</b></h5>
+                      <a class="nav-link active text-light" href="Newhome.html" target="_blank">Beranda</a>
+                      <a class="nav-link active text-light" href="Penilaian1.html" target="_blank">Layanan</a>
+                      <a class="nav-link active text-light" href="Artikel.html" target="_blank">Artikel</a>
+                      <a class="nav-link active text-light" href="ForumDiskusi.html" target="_blank">Komunitas</a>
+                      <a class="nav-link active text-light" href="aboutus.html" target="_blank">Tentang Kami</a>
+                  </div>
+      
+                  <div class="col-4">
+                      <h5 class="text-light"><b>Lainnya</b></h5>
+                      <a class="nav-link active text-light" href="#">Syarat & Ketentuan</a>
+                      <a class="nav-link active text-light" href="#">Privasi</a>
+                      <a class="nav-link active text-light" href="#">Iklan</a>
+                      <a class="nav-link active text-light" href="#">Komunitas</a>
+                      <a class="nav-link active text-light" href="#">Gabung di Tim Artikel</a>
+                  </div>
+      
+                  <div class="col-4">
+                    <h5 class="text-light"><b>Media Sosial</b></h5>
+                    <div class="d-flex align-items-center mt-1">
+                      <a href="https://www.facebook.com/"><i class="fab fa-facebook-f medsos"></i></a>
+                      <a href="https://twitter.com/?lang=en-id"><i class="fab fa-twitter medsos"></i></a>
+                      <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram medsos"></i></a>
+                      <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in medsos"></i></a>
+                    </div>
+                </div>
+              </div>
+          </div>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
